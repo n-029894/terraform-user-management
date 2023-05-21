@@ -1,0 +1,8 @@
+# By excluding an IAM configuration, this user will not have an IAM account
+# created, even if the team is designated to have accounts created.
+last_one@email.com:
+  given_name: "Last"
+  family_name: "One"
+  team_lead: true
+  github:
+    username: "LastU"

@@ -1,0 +1,7 @@
+example_one@email.com:
+  given_name: "Example"
+  family_name: "One"
+  iam:
+    username: "eone-contractor"
+  github:
+    username: "ExOne"

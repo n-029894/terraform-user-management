@@ -1,0 +1,17 @@
+# Considering this is for user management, we require a code review from
+# someone in the OrgAdmins or SRE team for all code changes
+* @company-org/OrgAdmins @company-org/SRE
+
+# For other infrastructure, depending on the particular politics of your
+# organization, you may want to allow approved developers/teams the ability to
+# maintain their own infrastructure.
+databases/* @company-org/DBAs
+
+# The teams directory has a lot of flexibility with permissions.
+# You could require changes to anything in the directory be approved by a
+# dedicated IT or HR team
+teams/* @company-org/IT @company-org/HR
+
+# Or the individual team files could require approval from their respective
+# team leads
+teams/developers.yaml @LastU

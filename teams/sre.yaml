@@ -1,0 +1,19 @@
+some_user@email.com:
+  given_name: "Some"
+  family_name: "User"
+  team_lead: true
+  iam:
+    username: "suser"
+  github:
+    username: "someuser"
+  google:
+    aliases:
+      - "suser"
+
+another_user@email.com:
+  given_name: "Another"
+  family_name: "User"
+  iam:
+    username: "otheruser"
+  github:
+    username: "AnotherUser45"
