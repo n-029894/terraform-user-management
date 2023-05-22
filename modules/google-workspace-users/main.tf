@@ -11,7 +11,8 @@ resource "googleworkspace_user" "company-name" {
     family_name = each.value.family_name
   }
 
-  aliases = each.value.google.aliases
+  // Default to an empty list if no aliases are specified
+  aliases = try(each.value.google.aliases, [])
 
   organizations {
     department = each.value.team_name
