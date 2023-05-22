@@ -24,11 +24,11 @@ resource "random_password" "user-credentials" {
 resource "aws_secretsmanager_secret" "user-credentials" {
   for_each = var.teams
   // Occasionally, provisioning new user accounts is done by an IT or HR team.
-  // By programmatically prefixing the secret with "google_user_credentials_"
+  // By programmatically prefixing the secret with "aws_user_credentials_"
   // it allows us to create an IAM policy which grants access to only the
   // secrets containing this prefix to the non-technical teams doing the
   // account creations.
-  name = "google_user_credentials_${each.value.email}"
+  name = "aws_user_credentials_${each.value.email}"
 }
 
 resource "aws_secretsmanager_secret_version" "user-credentials" {
